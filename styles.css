@@ -1,0 +1,74 @@
+.resume {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+  grid-gap: 5px;
+  grid-template-areas  :
+        "name photo"
+        "work about"
+        "work education"
+        "skills references";
+}
+
+@media only screen and (max-width: 600px) {
+	.name {
+		font-size: 0.5em;
+	}
+}
+.circle {
+    border       : 1px solid black;
+    height       : 30px;
+    width        : 30px;
+    border-radius: 50%;
+}
+
+.grid-area {
+    padding: 1em 1em 1em 1em;
+    border : 1px black solid;
+}
+
+.name {
+  grid-area : name;
+}
+
+.photo {
+  grid-area : photo;
+}
+
+.about {
+  grid-area : about;
+}
+
+.work {
+  grid-area : work;
+}
+
+.education {
+  grid-area : education;
+}
+
+.skills {
+  grid-area : skills;
+}
+
+.references {
+  grid-area : references;
+}
+
+.wrapper {
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.job-title {
+	color: rgba(10, 116, 197);
+}
+
+.work-experience {
+	text-transform: uppercase;
+	color: rgb(153, 152, 142);
+	font-size: 0.8em;
+}
